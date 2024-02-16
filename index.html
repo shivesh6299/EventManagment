@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+   
+</head>
+<body>
+
+    <header>
+        <!-- <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div> -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Service</a>
+                    <div class="dropdown-content">
+                        <a href="wedding.html">wedding </a>
+                        <a href="corporate.html">Coporate Event </a>
+                        <a href="reception.html">Reception </a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+<!-- Carasual  -->
+
+    
+   
+         
+<div class="slideshow-container">
+        
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="image/wp2349396.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="image/wp2349409.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="image/wp2349444.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script> 
+
+    <!-- main part -->
+
+  <h2 style=" text-align: center;">Welcome to Booking event in Biharsharif</h2>
+  <div class="container">
+    <!-- Image Container -->
+    <div class="image-container">
+      <img src="image/index/wedding.jpg" alt="Image 1">
+    </div>
+
+    <!-- Details Container -->
+    <div class="details-container">
+      <h2>Wedding Event service</h2>
+      <p>Full Service Event Design & Coordination</p>
+       <p> Partial Planning & Coordination</p>
+        Day Of Event Coordination</p>
+        3 Days Destination Event Planning</p>
+        Production, Theme & Floral Design</p>
+        Venue Sourcing</p>
+        Audio Visual Management</p>
+        All Vendor Management – Vendor Referral Only</p>
+        Guest Management List & RSVP Management</p>
+        Wedding Rehearsal</p>
+        Corporate Event Coordinator</p>
+        Occasional Event Planning Such As Birthday, Bridal Shower, Anniversary, New Year & More</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Image Container -->
+    <div class="image-container">
+      <img src="image/index/birthday1.jpg" alt="Image 2">
+    </div>
+
+    <!-- Details Container -->
+    <div class="details-container">
+      <h2>Birthday Event Service</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, explicabo quasi illum libero, dolore odit ad ea cumque incidunt error quae consequatur. Facere, temporibus sit. Assumenda tempora pariatur error id.
+      Similique possimus nostrum aliquid perferendis. Deserunt unde, voluptate culpa illo odit quam. Iste quasi sit repellendus ullam quia dolore excepturi repellat, corrupti esse fuga, officiis expedita doloremque blanditiis amet consequatur.
+      Corrupti iure ea officiis illum, molestiae expedita animi id ad eius non laudantium quo nulla nisi eos vero rerum suscipit itaque accusantium laboriosam fugiat inventore numquam sapiente, harum voluptas! Saepe?
+      Officiis, corporis molestias fugit dolorem, distinctio non hic fugiat iste alias ullam doloribus maiores itaque minus. Laudantium blanditiis illum eveniet cupiditate culpa a sequi, amet numquam, nisi iste velit corrupti.
+      Quod eum, tenetur quis dolor, nihil dignissimos nulla corporis optio ratione voluptatem sint nostrum est quasi a vitae consequuntur laboriosam maxime eos. Dignissimos, quae veniam. Voluptatum ex autem quibusdam rem!</p>
+    </div>
+  </div>
+     
+  <!-- Footer -->
+
+         <footer>
+            <div class="footer-section">
+              <h3>Product</h3>
+              <ul>
+                <li>Event Platform</li>
+                <li>Product Integration</li>
+                <li>Security & Compliance</li>
+                <li>Enterprise event </li>
+              </ul>
+            </div>
+        
+            <div class="footer-section">
+              <h3>Customer</h3>
+              <!-- Add content for Section 2 as needed -->
+              <ul>
+                <li>Customer Stories</li>
+                <li>Professional service</li>
+                <li>Review</li>
+                <li>Help and glow</li>
+              </ul>
+            </div>
+        
+            <div class="footer-section">
+              <h3>Resources</h3>
+              <ul>
+                <li>Blog</li>
+                <li>Resource library</li>
+                <li>our event</li>
+                <li>Event Expernince</li>
+              </ul>
+              <!-- Add content for Section 3 as needed -->
+            </div>
+        
+            <div class="footer-section">
+              <h3>About us</h3>
+              <ul>
+                <li>Pricing</li>
+                <li>our team</li>
+                <li>Careers</li>
+                <li>Contact us</li>
+              </ul>
+              <!-- Add content for Section 4 as needed -->
+            </div>
+          </footer>
+    <footer>
+      
+
+  <footer>
+    <div class="about-us" style="float: left;;">
+        <h3>About Us</h3>
+        <p>Eventcracker is a full-service event and wedding planning company located in Oregon, Operating PNW & Thailand.
+
+          We offer professional event planning and co-ordination service for intimate weddings, corporate events, gala dinner & more.  </p>
+
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"><img src="image/fb.png" alt="Facebook" 
+            ></a>
+        <a href="https://www.instagram.com/" target="_blank" ><img src="image/insta.png"
+                alt="Instagram"></a>
+        <a href="https://twitter.com/" target="_blank" ><img src="image/x.png" alt="Twitter"></a>
+    </div>
+    <p style="text-align: center;">&copy; Shivesh kumar</p>
+    
+</footer>
+</body>
+</html>
